@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería </title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Galería Fotográfica</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="galeria.html">Galería</a>
+  <a href="videos.html">Videos</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<main>
+  <section class="tarjeta">
+    <h2>Momentos del CECYTEM</h2>
+    <div class="galeria">
+      <img src="img/imagen1.jpg" alt="Imagen 1">
+      <img src="img/imagen2.jpg" alt="Imagen 2">
+      <img src="img/imagen3.jpg" alt="Imagen 3">
+      <img src="img/imagen4.jpg" alt="Imagen 4">
+      <img src="img/imagen5.jpg" alt="Imagen 5">
+      <img src="img/imagen6.jpg" alt="Imagen 6">
+      <img src="img/imagen7.jpg" alt="Imagen 7">
+      <img src="img/imagen8.jpg" alt="Imagen 8">
+    </div>
+  </section>
+</main>
+
+
+<script>
+  document.querySelectorAll('.galeria img').forEach(img => {
+    img.addEventListener('click', () => img.classList.toggle('rotar'));
+  });
+</script>
+
+</body>
+</html>
